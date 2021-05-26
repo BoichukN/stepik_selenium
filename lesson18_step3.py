@@ -29,4 +29,4 @@ def test_guest_should_see_login_link(browser, link):
     browser.find_element_by_css_selector('button.submit-submission').click()
     time.sleep(1)
     msg = browser.find_element_by_css_selector('pre.smart-hints__hint')
-    assert "Correct!" == msg.text, f"Is {msg.text} not 'Correct!'"
+    assert "Correct!" == msg.text, f"is {msg.text} not 'Correct!'"
